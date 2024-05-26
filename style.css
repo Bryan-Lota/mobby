@@ -1,6 +1,6 @@
 body{
   align-items: center;
-}
+text-align: ;}
 
 body, .tpm {
   margin: 0;
@@ -10,12 +10,58 @@ body, .tpm {
     margin: 0% 3%;
   } 
 
+  .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(255 255 255) !important;
+}
 
-  
 #con-flu{
   margin-top: 0.8%;
   
 }
+
+
+
+
+
+
+
+
+
+/* Custom styles for the nav links */
+.nav-link {
+  position: relative; /* Set position to relative to use ::after */
+  font-weight: bold; /* Make the links bold */
+  text-decoration: none; /* Remove underline from links */
+  padding-bottom: 5px; /* Add padding to the bottom for the line effect */
+}
+
+/* Add hover effect for the nav links */
+
+/* Add hover effect for the nav links */
+.nav-link::after {
+  content: ''; /* Empty content for the ::after element */
+  position: absolute; /* Position it absolutely */
+  left: 50%; /* Start from the center */
+  bottom: 0; /* Align to the bottom */
+  width: 0; /* Initially set the width to 0 */
+  height: 2px; /* Height of the underline */
+  background-color: #FC1D4D; /* Color of the underline */
+  transition: width 0.3s, left 0.3s; /* Smooth transition for the underline */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expand the underline to full width on hover */
+  left: 0; /* Move the starting position to the left */
+}
+
+
+
+
+
+
+
+
 
 .nav-fx{
   padding-right: 150px ;
@@ -39,7 +85,6 @@ body, .tpm {
   border-bottom: 2px solid #ccc; /* Adds a solid black border at the bottom */
   border-radius: 10px; /* Softens the edges with rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to create a floating effect */
-  z-index: 1000; /* Ensures the navbar is on top of other elements */
 }
 
 
@@ -57,9 +102,9 @@ body, .tpm {
   z-index: 1;
 }
 
-h1 {
-  font-size: 3.5rem;
-  line-height: 1.55;
+h1 > .tpm {
+  font-size: 3.7rem;
+  line-height: 1.2;
   color: #000000;
   margin-bottom: 0;
 }
@@ -68,7 +113,8 @@ h1 {
   margin: 25px 0;
   color: #757575;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.75rem;
 }
 
 #offer-sub{
@@ -150,12 +196,17 @@ img {
 }
 
 #offer-sect{
-  padding: 0;
+  padding: 60px;
+}
+
+#offer-subset{
+  margin-bottom: 50px;
 }
 
 .display-sett{
   display: inline-block;
   width: 50%;
+  margin: 40px 40px 25px 40px;
 }
 
 .mid{
@@ -189,16 +240,32 @@ img {
     transform: rotate(-45deg);
 }
 
-#boxy{
-  width: 100px;
-  height: 100px;
-  background-color: #757575;
-  border: #000;
-  border-radius: 10px;
-  position: absolute;
-  right: 30px;
+#boxy-daddy{
+  position: relative;
 }
 
+#boxy{
+  width: 592px;
+  height: 100px;
+  background-color: #42526de4;
+  border: #000;
+  border-radius: 10px;
+
+  position: absolute;
+  right: 200px;
+  bottom: 0px;
+  z-index: 3;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  /* gap: 30px; */
+  /* justify-content: space-between; */
+}
+
+.box{
+  border: 2px solid purple;
+}
 
 /* TESTING TESTIMONIALS START HERE */
 .box-area {
@@ -234,7 +301,7 @@ img {
 #community{
   color: white;
   display: inline-block;
-  background-color: #FC1D4D;
+  background-color: #FD9BB0;
   margin: 120px auto;
   padding: 60px;
     border-radius: 30px;
@@ -246,5 +313,82 @@ img {
 }
 
 .classcom{
-  background-color: blue;
+  background-color: ;
+}
+
+.cardano{
+  border-radius: 14px;
+  background-color: #f6f6f6;
+}
+
+.cardano-parent{
+  margin: 0px 30px 55px 30px;
+  text-align: center;
+  align-items: center;
+  max-width: 270px;
+  min-height: 450px;
+}
+
+.card-title{
+  font-size: 25px;
+  font-weight: 600;
+  padding: 40px 30px 30px 30px;
+  line-height: 24px;
+}
+
+.rows{
+  margin: 0px 90px;
+  text-align: center;
+}
+
+.card-text{
+  font-size: 15px;
+  margin: 20px 0 20px 0;
+  padding: 0px 30px;
+}
+
+.cardano-child-child{
+  margin-top: 20px;
+  
+}
+
+.tpm-side{
+  margin-bottom: 25px;
+  padding: 10px;
+
+}
+
+.tpm-parent{
+  margin: 45px 30px 10px 30px;
+}
+
+.tpm-parent > h1{
+  font-size: 3.5rem;
+  line-height: 1.;
+}
+
+.tpm-parent > button{
+  margin: 20px 20px 20px 10px;
+  padding: 8px;
+}
+
+.testimonial-start{
+  margin: 50px 50px 0px 50px;
+  padding: 25px 0;
+}
+
+.testi{
+  margin: 50px 0;
+}
+
+.card-test{
+  margin-top: 60px;
+}
+
+.cardify{
+  border-radius: 15px;
+}
+
+.cardify-child{
+  padding: 50px 0px;
 }
