@@ -392,3 +392,17 @@ img {
 .cardify-child{
   padding: 50px 0px;
 }
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .nav-fx{
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+ 
+}
