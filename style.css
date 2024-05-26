@@ -396,10 +396,23 @@ img {
 
 
 
+
 @media only screen and (max-width: 767px) {
   .nav-fx{
     padding-right: 0px;
+    padding: 0;
   }
+
+  .container-fluid{
+    margin: 0% ;
+  } 
+
+
+  .title-sect{
+    padding: 0px;
+    /* margin-bottom: 50px; */
+  }
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
